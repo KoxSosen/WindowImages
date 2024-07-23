@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to WindowImages!</h1>
+      <label for="apis">Choose your preferred API: </label>
+      <select id="apis">
+        <option value="bing">Bing</option>
+        <option value="pixabay">Pixabay</option>
+        <option value="usplash">Usplash</option>
+      </select>
+
+      <form class="row" id="details">
+        <label for="refresh-interval">
+        </label><input id="refresh-interval" placeholder="Enter a time period such as 24h..." />
+        <button type="submit">Greet</button>
+      </form>
+
+      <p id="greet-msg"></p>
+    </div>
+  </body>
+</html>
